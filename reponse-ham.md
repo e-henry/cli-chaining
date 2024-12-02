@@ -8,7 +8,7 @@ grep ',2001,' sets.csv | cut -d',' -f3,2 | sort | uniq
 
 
 ## Résultat
-| Année | Nom de la boite |
+| Nom de la boite | Année  |
 |-------|------------------|
 | 1-2-3 Marie | 2001 |
 | 1 x 2 Sand Red Bricks | 2001 |
