@@ -2,7 +2,7 @@
 
 ## Commande passée
 
-    $ grep ',2001,' sets.csv | cut -d ',' -f2 | sort | uniq | awk '{print "| 2001 | " $0 " |"}' >> reponse-abc.md
+    $ grep ',2001,' sets.csv | cut -d ',' -f2 | sort | uniq | awk '{print "| 2001 | " $0 " |"}' >> reponse-myba.md
 
 ## Résultat
 
