@@ -7,6 +7,7 @@
 ## Résultat
 
 | Année | Nom de la boite |
+| ----- | --------------- |
 | 2001 | 1-2-3 Marie |
 | 2001 | 1 x 2 Sand Red Bricks |
 | 2001 | 1 x 4 x 3 Wall Element Clear |
