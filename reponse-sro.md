@@ -4,13 +4,13 @@
 
 ```bash
 
-grep ',2001,' sets.csv | awk -F, '{print "| " $3 " | " $2 " |"}' | sort -fu >> reponse-sro.md
-
+$ grep ',2001,' sets.csv | awk -F',' '!seen[$2]++ {print "| " $3 " | " $2 " |"}' | sort | grep '2001' | awk 'BEGIN {print "| Année | Nom de la boite |"; print "| ----- | --------------- |"} {print $0}' > reponse-sro.md 
 ```
 
    ## Résultat
 
-
+| Année | Nom de la boite |
+| ----- | --------------- |
 | 2001 | 1-2-3 Marie |
 | 2001 | 1 x 2 Sand Red Bricks |
 | 2001 | 1 x 4 x 3 Wall Element Clear |
@@ -444,4 +444,3 @@ grep ',2001,' sets.csv | awk -F, '{print "| " $3 " | " $2 " |"}' | sort -fu >> r
 | 2001 | Young Brachiosaurus (The Arm Lizard) |
 | 2001 | Young Dimetrodon (The Two-Toothed) |
 | 2001 | Young Iguanodon (The Iguana Tooth) |
-| 2022 | Airbus H175 Rescue Helicopter |
