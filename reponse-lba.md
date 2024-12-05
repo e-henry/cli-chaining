@@ -2,10 +2,9 @@
 
 ## Commande passée
 
-    $ grep ',2001,' sets.csv | awk -F',' '!seen[$2]++ {print "| " $3 " | " $2 " |"}' |sort | grep '2001' |awk 'BEGIN {print "| Année | Nom de la boite |"} {print $0}'
+    $ grep ',2001,' sets.csv | awk -F',' '!seen[$2]++ {print "| " $3 " | " $2 " |"}' | sort | grep '2001' | awk 'BEGIN {print "| Année | Nom de la boite |"; print "| ----- | --------------- |"} {print $0}'
 
 ## Résultat
-
 | Année | Nom de la boite |
 | ----- | --------------- |
 | 2001 | 1-2-3 Marie |
