@@ -2,7 +2,7 @@
 
 ## Commande passée
 
-    $ awk -F ',' 'NR > 1 && $3 == 2001 {print "| " $3 " | " $2 " |"}' sets.csv | sort | uniq >> reponse-gch.md
+    $ grep '2001' | awk -F ',' 'NR > 1 && $3 == 2001 {print "| " $3 " | " $2 " |"}' sets.csv | sort | uniq >> reponse-gch.md
 
 ## Résultat
 
